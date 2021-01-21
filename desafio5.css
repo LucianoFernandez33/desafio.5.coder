@@ -1,0 +1,42 @@
+
+#container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#baseDeDato, #baseDeDatoDos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 300px;
+    width: 300px;
+    background-color: chocolate;
+    align-items: center;
+    align-self: center;
+}
+h1{
+    font-size: 3em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+h2{
+    color: cornsilk;
+    text-transform: capitalize;
+}
+p{
+    color: cyan;
+    align-items: flex-end;
+}
+button{
+    color: brown;
+    background-color: chartreuse;
+}
+img{
+    position: relative;
+    top: 6px;
+    left: 40px;
+    width: 110px;
+}
