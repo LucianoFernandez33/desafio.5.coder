@@ -1,6 +1,14 @@
 var usuario = prompt ("Ingrese nombre de Usuario: ")
 
-alert("Hola " + usuario + "!." + " " + " Bienvenido/a a la Base de Datos de la Institución San Nicolás" )
+let nombreMayuscula = usuario.toLocaleUpperCase();
+
+alert("Hola " + nombreMayuscula + "!." + " " + " Bienvenido/a a la Base de Datos de la Institución San Nicolás" )
+
+document.write ('Profesor/a: ' + nombreMayuscula);
+
+let materias = ['Inglés', 'Matemática', 'Gimnasia']
+console.log(materias)
+
 class datosAlumnos{
     constructor(nombreAlumno,dniAlumno,gradoAlumno,promedioAlumno){
         this.alumno = nombreAlumno;
@@ -41,4 +49,15 @@ function mostrarDatosDos() {
     let alumnoDos = new datosAlumnos("Emilia Fernandez", 55256963, "Salita de 4(Jardin)", 10);
     alumnoDos.mostrarDatosEnPantallaDos();
   }
+
+  materias.push('Ciencias Sociales'); //Agregamos una materia más a la lista.
+  console.log(materias);
+
+let masMaterias = ['Ciencias Naturales', 'Lengua', 'Dibujo'];
+let todasLasMaterias = materias.concat(masMaterias);
+console.log(todasLasMaterias);
+
+let listaMaterias = todasLasMaterias.join (' - ');
+console.log (listaMaterias);
+  
 
